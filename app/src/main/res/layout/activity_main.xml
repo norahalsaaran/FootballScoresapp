@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
@@ -44,10 +44,8 @@
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
                android:layout_gravity="center"
-               android:text="Goals Score :"
-               android:textColor="@android:color/black"
-               android:textSize="16sp"
-               android:textStyle="bold" />
+               android:text="@string/goal"
+               android:textAppearance="@style/font" />
 
            <LinearLayout
                android:layout_width="wrap_content"
@@ -57,29 +55,27 @@
                android:paddingTop="16dp">
 
            <Button
-               android:layout_width="48dp"
-               android:layout_height="48dp"
+               android:layout_width="@dimen/button_layout_width"
+               android:layout_height="@dimen/button_layout_height"
                android:layout_marginRight="8dp"
                android:background="@color/white"
                android:onClick="team1_decrement_score"
-               android:text="-" />
+               android:text="@string/decrement" />
 
            <TextView
                android:id="@+id/team1_score"
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
-               android:text="0"
-               android:textColor="@android:color/black"
-               android:textSize="16sp"
-               android:textStyle="bold" />
+               android:text="@string/initial_value"
+               android:textAppearance="@style/font" />
 
                <Button
-                   android:layout_width="48dp"
-                   android:layout_height="48dp"
+                   android:layout_width="@dimen/button_layout_width"
+                   android:layout_height="@dimen/button_layout_height"
                    android:layout_marginLeft="8dp"
                    android:background="@color/white"
                    android:onClick="team1_increment_score"
-                   android:text="+" />
+                   android:text="@string/increment" />
 
        </LinearLayout>
            <Button
@@ -88,17 +84,15 @@
                android:layout_gravity="center"
                android:background="@color/white"
                android:onClick="team1_reset_score"
-               android:text="Reset" />
+               android:text="@string/reset" />
 
            <TextView
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
                android:layout_gravity="center"
                android:paddingTop="16dp"
-               android:text="Fauls Score :"
-               android:textColor="@android:color/black"
-               android:textSize="16sp"
-               android:textStyle="bold" />
+               android:text="@string/faul"
+               android:textAppearance="@style/font" />
 
            <LinearLayout
                android:layout_width="wrap_content"
@@ -108,29 +102,27 @@
                android:paddingTop="16dp">
 
                <Button
-                   android:layout_width="48dp"
-                   android:layout_height="48dp"
+                   android:layout_width="@dimen/button_layout_width"
+                   android:layout_height="@dimen/button_layout_height"
                    android:layout_marginRight="8dp"
                    android:background="@color/white"
                    android:onClick="team1_decrement_faul"
-                   android:text="-" />
+                   android:text="@string/decrement" />
 
                <TextView
                    android:id="@+id/team1_faul"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
-                   android:text="0"
-                   android:textColor="@android:color/black"
-                   android:textSize="16sp"
-                   android:textStyle="bold" />
+                   android:text="@string/initial_value"
+                   android:textAppearance="@style/font" />
 
                <Button
-                   android:layout_width="48dp"
-                   android:layout_height="48dp"
+                   android:layout_width="@dimen/button_layout_width"
+                   android:layout_height="@dimen/button_layout_height"
                    android:layout_marginLeft="8dp"
                    android:background="@color/white"
                    android:onClick="team1_increment_faul"
-                   android:text="+" />
+                   android:text="@string/increment" />
 
            </LinearLayout>
            <Button
@@ -139,7 +131,7 @@
                android:layout_gravity="center"
                android:background="@color/white"
                android:onClick="team1_reset_faul"
-               android:text="Reset" />
+               android:text="@string/reset" />
 
        </LinearLayout>
        //------------------------end team 1 --------------------------
@@ -178,10 +170,8 @@
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
                android:layout_gravity="center"
-               android:text="Goals Score :"
-               android:textColor="@android:color/black"
-               android:textSize="16sp"
-               android:textStyle="bold" />
+               android:text="@string/goal"
+               android:textAppearance="@style/font" />
 
            <LinearLayout
                android:layout_width="wrap_content"
@@ -191,29 +181,27 @@
                android:paddingTop="16dp">
 
                <Button
-                   android:layout_width="48dp"
-                   android:layout_height="48dp"
+                   android:layout_width="@dimen/button_layout_width"
+                   android:layout_height="@dimen/button_layout_height"
                    android:layout_marginRight="8dp"
                    android:background="@color/white"
                    android:onClick="team2_decrement_score"
-                   android:text="-" />
+                   android:text="@string/decrement" />
 
                <TextView
                    android:id="@+id/team2_score"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
-                   android:text="0"
-                   android:textColor="@android:color/black"
-                   android:textSize="16sp"
-                   android:textStyle="bold" />
+                   android:text="@string/initial_value"
+                   android:textAppearance="@style/font" />
 
                <Button
-                   android:layout_width="48dp"
-                   android:layout_height="48dp"
+                   android:layout_width="@dimen/button_layout_width"
+                   android:layout_height="@dimen/button_layout_height"
                    android:layout_marginLeft="8dp"
                    android:background="@color/white"
                    android:onClick="team2_increment_score"
-                   android:text="+" />
+                   android:text="@string/increment" />
 
            </LinearLayout>
            <Button
@@ -222,17 +210,15 @@
                android:layout_gravity="center"
                android:background="@color/white"
                android:onClick="team2_reset_score"
-               android:text="Reset" />
+               android:text="@string/reset" />
 
            <TextView
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
                android:layout_gravity="center"
                android:paddingTop="16dp"
-               android:text="Fauls Score :"
-               android:textColor="@android:color/black"
-               android:textSize="16sp"
-               android:textStyle="bold" />
+               android:text="@string/faul"
+               android:textAppearance="@style/font" />
 
            <LinearLayout
                android:layout_width="wrap_content"
@@ -242,29 +228,27 @@
                android:paddingTop="16dp">
 
                <Button
-                   android:layout_width="48dp"
-                   android:layout_height="48dp"
+                   android:layout_width="@dimen/button_layout_width"
+                   android:layout_height="@dimen/button_layout_height"
                    android:layout_marginRight="8dp"
                    android:background="@color/white"
                    android:onClick="team2_decrement_faul"
-                   android:text="-" />
+                   android:text="@string/decrement" />
 
                <TextView
                    android:id="@+id/team2_faul"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
-                   android:text="0"
-                   android:textColor="@android:color/black"
-                   android:textSize="16sp"
-                   android:textStyle="bold" />
+                   android:text="@string/initial_value"
+                   android:textAppearance="@style/font" />
 
                <Button
-                   android:layout_width="48dp"
-                   android:layout_height="48dp"
+                   android:layout_width="@dimen/button_layout_width"
+                   android:layout_height="@dimen/button_layout_height"
                    android:layout_marginLeft="8dp"
                    android:background="@color/white"
                    android:onClick="team2_increment_faul"
-                   android:text="+" />
+                   android:text="@string/increment" />
 
            </LinearLayout>
            <Button
@@ -273,11 +257,11 @@
                android:layout_gravity="center"
                android:background="@color/white"
                android:onClick="team2_reset_faul"
-               android:text="Reset" />
+               android:text="@string/reset" />
 
        </LinearLayout>
        //--------------------------end team 2------------------------------
 
    </LinearLayout>
 
-</RelativeLayout>
+</ScrollView>
