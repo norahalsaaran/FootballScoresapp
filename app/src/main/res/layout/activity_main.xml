@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/gray"
+    tools:context="com.example.android.footballscoresapp.MainActivity">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="horizontal"
+       >
+
+
+       //----------------------------team 1 -----------------------------
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:layout_margin="16dp"
+
+           >
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Team 1"
+               android:textSize="20sp"
+               android:textColor="@color/red"
+               android:layout_gravity="center"/>
+
+           <ImageView
+               android:layout_gravity="center"
+               android:layout_width="70dp"
+               android:layout_height="70dp"
+               android:src="@drawable/red" />
+
+           <TextView
+               android:layout_height="wrap_content"
+               android:layout_width="wrap_content"
+               android:layout_gravity="center"
+               android:text="Goals Score :"
+               android:textColor="@android:color/black"
+               android:textStyle="bold"
+               android:textSize="16sp"/>
+
+           <LinearLayout
+               android:orientation="horizontal"
+               android:layout_height="wrap_content"
+               android:layout_width="wrap_content"
+               android:paddingTop="16dp"
+               android:paddingBottom="16dp">
+
+           <Button
+               android:layout_height="48dp"
+               android:layout_width="48dp"
+               android:text="-"
+               android:onClick="team1_decrement_score"
+               android:layout_marginRight="8dp"
+               android:background="@color/white"/>
+
+           <TextView
+               android:layout_height="wrap_content"
+               android:layout_width="wrap_content"
+               android:id="@+id/team1_score"
+               android:text="0"
+               android:textColor="@android:color/black"
+               android:textStyle="bold"
+               android:textSize="16sp"/>
+
+               <Button
+                   android:layout_height="48dp"
+                   android:layout_width="48dp"
+                   android:text="+"
+                   android:onClick="team1_increment_score"
+                   android:layout_marginLeft="8dp"
+                   android:background="@color/white"/>
+
+       </LinearLayout>
+           <Button
+               android:layout_height="48dp"
+               android:layout_width="60dp"
+               android:text="Reset"
+               android:onClick="team1_reset_score"
+               android:layout_gravity="center"
+               android:background="@color/white"/>
+
+           <TextView
+               android:layout_height="wrap_content"
+               android:layout_width="wrap_content"
+               android:layout_gravity="center"
+               android:paddingTop="16dp"
+               android:text="Fauls Score :"
+               android:textColor="@android:color/black"
+               android:textStyle="bold"
+               android:textSize="16sp"/>
+
+           <LinearLayout
+               android:orientation="horizontal"
+               android:layout_height="wrap_content"
+               android:layout_width="wrap_content"
+               android:paddingTop="16dp"
+               android:paddingBottom="16dp">
+
+               <Button
+                   android:layout_height="48dp"
+                   android:layout_width="48dp"
+                   android:text="-"
+                   android:onClick="team1_decrement_faul"
+                   android:layout_marginRight="8dp"
+                   android:background="@color/white"/>
+
+               <TextView
+                   android:layout_height="wrap_content"
+                   android:layout_width="wrap_content"
+                   android:id="@+id/team1_faul"
+                   android:text="0"
+                   android:textColor="@android:color/black"
+                   android:textStyle="bold"
+                   android:textSize="16sp"/>
+
+               <Button
+                   android:layout_height="48dp"
+                   android:layout_width="48dp"
+                   android:text="+"
+                   android:onClick="team1_increment_faul"
+                   android:layout_marginLeft="8dp"
+                   android:background="@color/white"/>
+
+           </LinearLayout>
+           <Button
+               android:layout_height="48dp"
+               android:layout_width="60dp"
+               android:text="Reset"
+               android:onClick="team1_reset_faul"
+               android:layout_gravity="center"
+               android:background="@color/white"/>
+
+       </LinearLayout>
+       //------------------------end team 1 --------------------------
+
+       <TextView
+           android:layout_height="wrap_content"
+           android:layout_width="wrap_content"
+           android:text="VS"
+           android:textColor="@android:color/black"
+           android:textStyle="bold"
+           android:textSize="30sp"/>
+
+       //--------------------------team 2 ----------------------------
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:layout_margin="16dp"
+
+           >
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Team 2"
+               android:textSize="20sp"
+               android:textColor="@color/blue"
+               android:layout_gravity="center"/>
+
+           <ImageView
+               android:layout_gravity="center"
+               android:layout_width="70dp"
+               android:layout_height="70dp"
+               android:src="@drawable/blue" />
+
+           <TextView
+               android:layout_height="wrap_content"
+               android:layout_width="wrap_content"
+               android:layout_gravity="center"
+               android:text="Goals Score :"
+               android:textColor="@android:color/black"
+               android:textStyle="bold"
+               android:textSize="16sp"/>
+
+           <LinearLayout
+               android:orientation="horizontal"
+               android:layout_height="wrap_content"
+               android:layout_width="wrap_content"
+               android:paddingTop="16dp"
+               android:paddingBottom="16dp">
+
+               <Button
+                   android:layout_height="48dp"
+                   android:layout_width="48dp"
+                   android:text="-"
+                   android:onClick="team2_decrement_score"
+                   android:layout_marginRight="8dp"
+                   android:background="@color/white"/>
+
+               <TextView
+                   android:layout_height="wrap_content"
+                   android:layout_width="wrap_content"
+                   android:id="@+id/team2_score"
+                   android:text="0"
+                   android:textColor="@android:color/black"
+                   android:textStyle="bold"
+                   android:textSize="16sp"/>
+
+               <Button
+                   android:layout_height="48dp"
+                   android:layout_width="48dp"
+                   android:text="+"
+                   android:onClick="team2_increment_score"
+                   android:layout_marginLeft="8dp"
+                   android:background="@color/white"/>
+
+           </LinearLayout>
+           <Button
+               android:layout_height="48dp"
+               android:layout_width="60dp"
+               android:text="Reset"
+               android:onClick="team2_reset_score"
+               android:layout_gravity="center"
+               android:background="@color/white"/>
+
+           <TextView
+               android:layout_height="wrap_content"
+               android:layout_width="wrap_content"
+               android:layout_gravity="center"
+               android:paddingTop="16dp"
+               android:text="Fauls Score :"
+               android:textColor="@android:color/black"
+               android:textStyle="bold"
+               android:textSize="16sp"/>
+
+           <LinearLayout
+               android:orientation="horizontal"
+               android:layout_height="wrap_content"
+               android:layout_width="wrap_content"
+               android:paddingTop="16dp"
+               android:paddingBottom="16dp">
+
+               <Button
+                   android:layout_height="48dp"
+                   android:layout_width="48dp"
+                   android:text="-"
+                   android:onClick="team2_decrement_faul"
+                   android:layout_marginRight="8dp"
+                   android:background="@color/white"/>
+
+               <TextView
+                   android:layout_height="wrap_content"
+                   android:layout_width="wrap_content"
+                   android:id="@+id/team2_faul"
+                   android:text="0"
+                   android:textColor="@android:color/black"
+                   android:textStyle="bold"
+                   android:textSize="16sp"/>
+
+               <Button
+                   android:layout_height="48dp"
+                   android:layout_width="48dp"
+                   android:text="+"
+                   android:onClick="team2_increment_faul"
+                   android:layout_marginLeft="8dp"
+                   android:background="@color/white"/>
+
+           </LinearLayout>
+           <Button
+               android:layout_height="48dp"
+               android:layout_width="60dp"
+               android:text="Reset"
+               android:onClick="team2_reset_faul"
+               android:layout_gravity="center"
+               android:background="@color/white"/>
+
+       </LinearLayout>
+       //--------------------------end team 2------------------------------
+
+   </LinearLayout>
+
+</RelativeLayout>
