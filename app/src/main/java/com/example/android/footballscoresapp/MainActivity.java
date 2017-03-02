@@ -12,7 +12,6 @@ public class MainActivity extends AppCompatActivity {
     int team2_score = 0 ;
     int team2_faul = 0 ;
 
-    //------------------------------------------
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
